@@ -1,6 +1,6 @@
 Lita.configure do |config|
   # The name your robot will use.
-  config.robot.name = "Lita"
+  config.robot.name = "Zojja"
 
   # The locale code for the language to use.
   # config.robot.locale = :en
@@ -19,7 +19,7 @@ Lita.configure do |config|
   # appropriate gem to the Gemfile.
   # config.robot.adapter = :shell
 
-  if ENV.fetch('RACK_ENV', 'development') == 'production' do 
+  if ENV.fetch('RACK_ENV') == 'production' do 
     config.robot.adapter = :slack 
     config.adapters.slack.token = ENV.fetch('SLACK_TOKEN', '')
   else 

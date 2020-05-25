@@ -19,7 +19,7 @@ Lita.configure do |config|
   # appropriate gem to the Gemfile.
   # config.robot.adapter = :shell
 
-  if ENV.fetch('RACK_ENV') == 'production' do 
+  if ENV.fetch('RACK_ENV') == 'production'  
     config.robot.adapter = :slack 
     config.adapters.slack.token = ENV.fetch('SLACK_TOKEN', '')
   else 

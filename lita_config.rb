@@ -1,6 +1,6 @@
 Lita.configure do |config|
   # The name your robot will use.
-  config.robot.name = "Zojja"
+  config.robot.name = "zojja"
 
   # The locale code for the language to use.
   # config.robot.locale = :en
